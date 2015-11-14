@@ -1,0 +1,6 @@
+{
+    "license": "MIT",
+    "autoload": {
+        "psr-4": { "Omnipay\\Ogone\\" : "src/" }
+    }
+}
