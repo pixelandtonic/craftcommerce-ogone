@@ -9,4 +9,9 @@ class Ogone_GatewayAdapter extends BaseGatewayAdapter
     {
         return "Ogone_Ecommerce";
     }
+
+    public function requiresCreditCard()
+    {
+        return false;
+    }
 }
