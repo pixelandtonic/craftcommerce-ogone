@@ -58,7 +58,8 @@ class OgonePlugin extends BasePlugin
         if($this->commerceInstalled) {
             require __DIR__ . '/vendor/autoload.php';
             require_once __DIR__.'/Ogone_GatewayAdapter.php';
+            return ['\Commerce\Gateways\Omnipay\Ogone_GatewayAdapter'];
         }
-        return ['\Commerce\Gateways\Omnipay\Ogone_GatewayAdapter'];
+        return [];
     }
 }
