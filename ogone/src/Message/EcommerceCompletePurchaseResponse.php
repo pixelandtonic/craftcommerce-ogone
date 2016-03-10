@@ -13,11 +13,11 @@ class EcommerceCompletePurchaseResponse extends AbstractResponse
     {
         if (isset($this->data['STATUS']) === false) {
             return false;
-        } else {
-            // Check if the Status is either 5/6/9
-            if (str_replace(array(5,4,9), '', $this->data['STATUS']) == false) {
-                return true;
-            }
+        }
+
+        // Check if the Status is either 5/4/9
+        if(in_array($this->data['STATUS'],array(5,4,9))){
+            return true;
         }
 
         return false;

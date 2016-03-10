@@ -1,17 +1,12 @@
 <?php
 namespace Commerce\Gateways\Omnipay;
 
-use Commerce\Gateways\BaseGatewayAdapter;
+use Commerce\Gateways\OffsiteGatewayAdapter;
 
-class Ogone_GatewayAdapter extends BaseGatewayAdapter
+class Ogone_GatewayAdapter extends OffsiteGatewayAdapter
 {
     public function handle()
     {
         return "Ogone_Ecommerce";
-    }
-
-    public function requiresCreditCard()
-    {
-        return false;
     }
 }
